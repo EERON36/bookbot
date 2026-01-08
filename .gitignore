@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# macOS junk
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Python packaging stuff (if you add it later)
+build/
+dist/
+*.egg-info/
+
+# Boot.dev / CLI temp files (if any end up here)
+.tmp/
+.cache/
