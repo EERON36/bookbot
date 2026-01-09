@@ -14,3 +14,12 @@ def get_chars(text):
             char_count[i] = 1
 
     return char_count
+
+
+def sort_on(items):
+    empty_list = list()
+
+    for key, value in items:
+        empty_list.append(value)
+
+    return empty_list

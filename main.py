@@ -1,4 +1,4 @@
-from stats import get_num_words, get_chars
+from stats import get_num_words, get_chars, sort_on
 
 
 def get_book_text(file_path):
@@ -17,8 +17,10 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars = get_chars(text)
-    print(f"Found {num_words} total words")
-    print(chars)
+    # print(f"Found {num_words} total words")
+    # print(chars)
+    list_nums = sort_on(chars)
+    print(list_nums)
 
 
 main()
