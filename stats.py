@@ -16,10 +16,18 @@ def get_chars(text):
     return char_count
 
 
+def char_list(char_count):
+    list_count = list()
+
+    for char, count in char_count.items():
+        temp = {"char": char, "num": count}
+        list_count.append(temp)
+
+    list_count.sort(reverse=True, key=sort_on)
+
+    return list_count
+
+
 def sort_on(items):
-    empty_list = list()
 
-    for key, value in items:
-        empty_list.append(value)
-
-    return empty_list
+    return items["num"]
